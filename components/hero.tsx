@@ -25,8 +25,8 @@ export default function Hero() {
           <ScrollAnimation type="fade-up" delay={100}>
             <div className="relative aspect-square w-48 md:w-64 overflow-hidden rounded-full border mb-8">
               <Image
-                src="/placeholder.svg?height=600&width=600"
-                alt="Tu foto de perfil"
+                src="/profile.jpg?height=600&width=600"
+                alt="Foto de perfil"
                 width={600}
                 height={600}
                 className="object-cover"
