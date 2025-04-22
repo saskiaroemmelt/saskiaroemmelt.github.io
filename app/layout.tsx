@@ -16,6 +16,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <link
+          rel="icon"
+          href="data:image/svg+xml,
+            %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E
+              %3Ctext x='50%25' y='50%25'
+                    dominant-baseline='central'
+                    text-anchor='middle'
+                    font-size='96'%3E%F0%9F%8E%AC%3C/text%3E
+            %3C/svg%3E"
+        />
+        <title>Saskia Römmelt</title>
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <LanguageProvider>
@@ -34,5 +47,5 @@ export default function RootLayout({
 }
 
 export const metadata = {
-      generator: 'v0.dev'
-    };
+  generator: 'v0.dev'
+};
