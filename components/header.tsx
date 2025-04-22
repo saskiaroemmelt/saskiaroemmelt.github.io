@@ -66,19 +66,19 @@ export default function Header() {
 
         {/* Controles a la derecha */}
         <div className="w-[100px] md:w-[120px] flex items-center justify-center gap-4">
-      {/* LanguageSwitcher y ModeToggle */}
-      <LanguageSwitcher />
-      <ModeToggle />
+          {/* LanguageSwitcher y ModeToggle */}
+          <LanguageSwitcher />
+          <ModeToggle />
 
-      {/* Menú hamburguesa para móvil */}
-      <Sheet>
-        <SheetTrigger asChild className="md:hidden">
-          <Button variant="outline" size="icon">
-            <Menu className="h-5 w-5" />
-            <span className="sr-only">Abrir menú</span>
-          </Button>
-        </SheetTrigger>
-        <SheetContent side="right">
+          {/* Menú hamburguesa para móvil */}
+          <Sheet>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="outline" size="icon">
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Abrir menú</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
               <nav className="flex flex-col gap-4 mt-8">
                 <button
                   onClick={() => scrollToSection("about-section", "about")}
