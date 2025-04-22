@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
 export default function Contact() {
@@ -33,17 +33,20 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitMessage(t("contact.success"))
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      })
-    }, 1500)
+    const mailtoUri = `mailto:saskia.roemmelt@gmail.com?` +
+      `subject=${encodeURIComponent(formData.subject)}` +
+      `&body=${encodeURIComponent("Using contact form from: " + formData.name + " (" + formData.email + ").\n\n" + formData.message)}`;
+
+    window.location.href = mailtoUri;
+
+    setIsSubmitting(false)
+    setSubmitMessage(t("contact.success"))
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    })
   }
 
   return (
@@ -61,7 +64,7 @@ export default function Contact() {
                   <Mail className="h-5 w-5 mt-0.5 text-muted-foreground" />
                   <div>
                     <h3 className="font-medium">{t("contact.email")}</h3>
-                    <p className="text-sm text-muted-foreground">correo@ejemplo.com</p>
+                    <p className="text-sm text-muted-foreground">saskia.roemmelt@gmail.com</p>
                   </div>
                 </div>
 
@@ -69,7 +72,15 @@ export default function Contact() {
                   <Phone className="h-5 w-5 mt-0.5 text-muted-foreground" />
                   <div>
                     <h3 className="font-medium">{t("contact.phone")}</h3>
-                    <p className="text-sm text-muted-foreground">+34 123 456 789</p>
+                    <p className="text-sm text-muted-foreground">(+54) 11 6171 7736 <br/> (+49) 176 847 483 34</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Linkedin className="h-5 w-5 mt-0.5 text-muted-foreground" />
+                  <div>
+                    <h3 className="font-medium">{t("contact.linkedin")}</h3>
+                    <p className="text-sm text-muted-foreground"><a href={t("contact.linkedin.href")}>/in/Saskia-Roemmelt</a></p>
                   </div>
                 </div>
 
@@ -77,21 +88,13 @@ export default function Contact() {
                   <MapPin className="h-5 w-5 mt-0.5 text-muted-foreground" />
                   <div>
                     <h3 className="font-medium">{t("contact.location")}</h3>
-                    <p className="text-sm text-muted-foreground">Madrid, España</p>
-                    <p className="text-sm text-muted-foreground">{t("contact.availability")}</p>
+                    <p className="text-sm text-muted-foreground">Vicente Lopez, Buenos Aires, Argentina <br/> Köln, Deutschland</p>
+                    <p className="text-sm text-muted-foreground"><br/>{t("contact.availability")}</p>
                   </div>
                 </div>
               </div>
-
-              <div className="mt-8">
-                <h3 className="font-medium mb-2">{t("contact.schedule")}</h3>
-                <p className="text-sm text-muted-foreground">
-                  {t("contact.weekdays")}
-                  <br />
-                  {t("contact.weekends")}
-                </p>
-              </div>
             </div>
+
 
             <div>
               <form onSubmit={handleSubmit} className="space-y-4">
