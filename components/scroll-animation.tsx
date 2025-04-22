@@ -7,6 +7,7 @@ interface ScrollAnimationProps {
   className?: string
   type?: "fade-up" | "fade-in"
   delay?: 0 | 100 | 200 | 300 | 400 | 500
+  threshold?: number // Nuevo prop para controlar el umbral de activación
 }
 
 export default function ScrollAnimation({
@@ -14,6 +15,7 @@ export default function ScrollAnimation({
   className = "",
   type = "fade-up",
   delay = 0,
+  threshold = 0.1, // Valor predeterminado más bajo para activar antes
 }: ScrollAnimationProps) {
   const ref = useRef<HTMLDivElement>(null)
 
@@ -29,8 +31,8 @@ export default function ScrollAnimation({
       },
       {
         root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
+        rootMargin: "0px 0px -10% 0px", // Activar la animación cuando el elemento está un 10% dentro de la ventana
+        threshold, // Usar el umbral proporcionado
       },
     )
 
@@ -43,7 +45,7 @@ export default function ScrollAnimation({
         observer.unobserve(ref.current)
       }
     }
-  }, [])
+  }, [threshold])
 
   const animationClass = `animate-${type}`
   const delayClass = delay > 0 ? `animate-delay-${delay}` : ""

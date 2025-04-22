@@ -3,6 +3,7 @@ import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
+import { TabsProvider } from "@/contexts/tabs-context"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
@@ -18,11 +19,13 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <LanguageProvider>
-            <div className="min-h-screen flex flex-col bg-background">
-              <Header />
-              <div className="flex-grow">{children}</div>
-              <Footer />
-            </div>
+            <TabsProvider>
+              <div className="min-h-screen flex flex-col bg-background">
+                <Header />
+                <div className="flex-grow">{children}</div>
+                <Footer />
+              </div>
+            </TabsProvider>
           </LanguageProvider>
         </ThemeProvider>
       </body>

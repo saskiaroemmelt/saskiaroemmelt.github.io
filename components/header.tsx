@@ -1,63 +1,127 @@
 "use client"
 
-import Link from "next/link"
 import { Menu } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ModeToggle } from "@/components/mode-toggle"
 import LanguageSwitcher from "@/components/language-switcher"
+import { useScrollToSection } from "@/hooks/use-scroll-to-section"
 
 export default function Header() {
   const { t } = useLanguage()
+  const scrollToSection = useScrollToSection()
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="font-bold text-xl px-4 md:px-0">
-          Portfolio Cinematográfico
-        </Link>
+      <div className="flex h-16 items-center justify-between">
+        {/* Espacio vacío a la izquierda para equilibrar visualmente */}
+        <div className="w-[100px] md:w-[120px]" /> {/* deja un div vacío para que el nav quede centrado */}
 
-        <nav className="hidden md:flex gap-6 mx-6">
-          <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+        {/* Navegación centrada */}
+        <nav className="flex gap-4 md:gap-6 justify-center mx-auto">
+          <button
+            onClick={() => scrollToSection("about-section", "about")}
+            className="text-muted-foreground hover:text-foreground transition-colors text-sm md:text-base"
+          >
             {t("nav.about")}
-          </Link>
-          <Link href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">
+          </button>
+          <button
+            onClick={() => scrollToSection("experience-section", "experience")}
+            className="text-muted-foreground hover:text-foreground transition-colors text-sm md:text-base"
+          >
             {t("nav.experience")}
-          </Link>
-          <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
+          </button>
+          <button
+            onClick={() => scrollToSection("projects-section", "projects")}
+            className="text-muted-foreground hover:text-foreground transition-colors text-sm md:text-base"
+          >
             {t("nav.projects")}
-          </Link>
-          <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+          </button>
+          <button
+            onClick={() => scrollToSection("references-section", "references")}
+            className="text-muted-foreground hover:text-foreground transition-colors hidden md:inline-block text-sm md:text-base"
+          >
+            {t("nav.references")}
+          </button>
+          <button
+            onClick={() => scrollToSection("skills-section", "skills")}
+            className="text-muted-foreground hover:text-foreground transition-colors hidden md:inline-block text-sm md:text-base"
+          >
+            {t("nav.skills")}
+          </button>
+          <button
+            onClick={() => scrollToSection("education-section", "education")}
+            className="text-muted-foreground hover:text-foreground transition-colors hidden md:inline-block text-sm md:text-base"
+          >
+            {t("nav.education")}
+          </button>
+          <button
+            onClick={() => scrollToSection("contact-section", "contact")}
+            className="text-muted-foreground hover:text-foreground transition-colors text-sm md:text-base"
+          >
             {t("nav.contact")}
-          </Link>
+          </button>
         </nav>
 
-        <div className="flex items-center gap-2">
-          <LanguageSwitcher />
-          <ModeToggle />
+        {/* Controles a la derecha */}
+        <div className="w-[100px] md:w-[120px] flex items-center justify-center gap-4">
+      {/* LanguageSwitcher y ModeToggle */}
+      <LanguageSwitcher />
+      <ModeToggle />
 
-          <Sheet>
-            <SheetTrigger asChild className="md:hidden ml-2">
-              <Button variant="outline" size="icon">
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Abrir menú</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
+      {/* Menú hamburguesa para móvil */}
+      <Sheet>
+        <SheetTrigger asChild className="md:hidden">
+          <Button variant="outline" size="icon">
+            <Menu className="h-5 w-5" />
+            <span className="sr-only">Abrir menú</span>
+          </Button>
+        </SheetTrigger>
+        <SheetContent side="right">
               <nav className="flex flex-col gap-4 mt-8">
-                <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+                <button
+                  onClick={() => scrollToSection("about-section", "about")}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-left"
+                >
                   {t("nav.about")}
-                </Link>
-                <Link href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">
+                </button>
+                <button
+                  onClick={() => scrollToSection("experience-section", "experience")}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-left"
+                >
                   {t("nav.experience")}
-                </Link>
-                <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
+                </button>
+                <button
+                  onClick={() => scrollToSection("projects-section", "projects")}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-left"
+                >
                   {t("nav.projects")}
-                </Link>
-                <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                </button>
+                <button
+                  onClick={() => scrollToSection("references-section", "references")}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-left"
+                >
+                  {t("nav.references")}
+                </button>
+                <button
+                  onClick={() => scrollToSection("skills-section", "skills")}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-left"
+                >
+                  {t("nav.skills")}
+                </button>
+                <button
+                  onClick={() => scrollToSection("education-section", "education")}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-left"
+                >
+                  {t("nav.education")}
+                </button>
+                <button
+                  onClick={() => scrollToSection("contact-section", "contact")}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-left"
+                >
                   {t("nav.contact")}
-                </Link>
+                </button>
               </nav>
             </SheetContent>
           </Sheet>

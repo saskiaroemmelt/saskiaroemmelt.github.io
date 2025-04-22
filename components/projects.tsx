@@ -35,6 +35,10 @@ export default function Projects() {
 
   const sortedProjects = getSortedProjects()
 
+  // Limitar a mostrar solo los primeros 3 proyectos inicialmente para mejorar el rendimiento
+  const visibleProjects = sortedProjects.slice(0, 3)
+  const hasMoreProjects = sortedProjects.length > 3
+
   return (
     <section id="projects" className="w-full">
       <Card>
