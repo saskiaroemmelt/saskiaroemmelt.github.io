@@ -365,7 +365,6 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("es")
 
-  // Intentar cargar el idioma guardado en localStorage al iniciar
   useEffect(() => {
     const savedLanguage = localStorage.getItem("language") as Language
     if (savedLanguage && ["es", "en", "de"].includes(savedLanguage)) {
@@ -373,7 +372,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
   }, [])
 
-  // Guardar el idioma en localStorage cuando cambie
   useEffect(() => {
     localStorage.setItem("language", language)
   }, [language])

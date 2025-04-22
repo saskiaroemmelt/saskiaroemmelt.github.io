@@ -58,7 +58,6 @@
   }
 }
 
-/* Animaciones de scroll */
 .animate-fade-up {
   opacity: 0;
   transform: translateY(20px);

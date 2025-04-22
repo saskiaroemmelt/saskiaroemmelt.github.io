@@ -18,7 +18,6 @@ export default function Home() {
   const { t } = useLanguage()
   const { activeTab, setActiveTab } = useTabs()
 
-  // Manejar cambios en la pestaña activa
   const handleTabChange = (value: string) => {
     setActiveTab(value)
   }
@@ -54,7 +53,6 @@ export default function Home() {
           </TabsContent>
 
           <TabsContent value="projects" className="mt-6" id="projects-section">
-            {/* Umbral más bajo para la sección de proyectos */}
             <ScrollAnimation threshold={0.01}>
               <Projects />
             </ScrollAnimation>

@@ -8,17 +8,14 @@ export function useScrollToSection() {
 
   const scrollToSection = useCallback(
     (sectionId: string, tabId?: string) => {
-      // Prevenir el comportamiento predeterminado si hay un evento
       if (event) {
         event.preventDefault()
       }
 
-      // Si se proporciona un ID de pestaña, activarla a través del contexto
       if (tabId) {
         setActiveTab(tabId)
       }
 
-      // Desplazarse a la sección con un offset menor para mostrar más contenido
       setTimeout(() => {
         const section = document.getElementById(sectionId)
         if (section) {

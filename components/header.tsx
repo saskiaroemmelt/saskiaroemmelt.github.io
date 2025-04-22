@@ -15,10 +15,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-16 items-center justify-between">
-        {/* Espacio vacío a la izquierda para equilibrar visualmente */}
-        <div className="w-[100px] md:w-[120px]" /> {/* deja un div vacío para que el nav quede centrado */}
+        <div className="w-[100px] md:w-[120px]" />
 
-        {/* Navegación centrada */}
         <nav className="flex gap-4 md:gap-6 justify-center mx-auto">
           <button
             onClick={() => scrollToSection("about-section", "about")}
@@ -64,13 +62,10 @@ export default function Header() {
           </button>
         </nav>
 
-        {/* Controles a la derecha */}
         <div className="w-[100px] md:w-[120px] flex items-center justify-center gap-4">
-          {/* LanguageSwitcher y ModeToggle */}
           <LanguageSwitcher />
           <ModeToggle />
 
-          {/* Menú hamburguesa para móvil */}
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="outline" size="icon">
