@@ -9,8 +9,10 @@ export default function Footer() {
 
   return (
     <footer className="w-full border-t bg-background py-6">
-      <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-muted-foreground">
+      <div className="container mx-auto px-4   // ← padding + centrado
+              flex flex-col md:flex-row items-center
+              justify-between gap-4">
+        <p className="text-sm text-muted-foreground text-center md:text-left">
           © {new Date().getFullYear()} Portfolio Cinematográfico. {t("footer.rights")}
         </p>
 
