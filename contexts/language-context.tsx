@@ -24,7 +24,7 @@ const translations = {
     "nav.contact": "Contacto",
 
     // Hero
-    "hero.title": "Tu Nombre",
+    "hero.title": "Saskia Römmelt",
     "hero.subtitle": "Unit Production Manager & Location Manager",
     "hero.description":
       "Profesional con amplia experiencia en la industria cinematográfica, especializado en la gestión de producción y localización para proyectos de cine y televisión.",
@@ -139,7 +139,7 @@ const translations = {
     "nav.contact": "Contact",
 
     // Hero
-    "hero.title": "Your Name",
+    "hero.title": "Saskia Römmelt",
     "hero.subtitle": "Unit Production Manager & Location Manager",
     "hero.description":
       "Professional with extensive experience in the film industry, specialized in production management and location scouting for film and television projects.",
@@ -254,7 +254,7 @@ const translations = {
     "nav.contact": "Kontakt",
 
     // Hero
-    "hero.title": "Dein Name",
+    "hero.title": "Saskia Römmelt",
     "hero.subtitle": "Unit Production Manager & Location Manager",
     "hero.description":
       "Fachmann mit umfangreicher Erfahrung in der Filmindustrie, spezialisiert auf Produktionsmanagement und Locationsuche für Film- und Fernsehprojekte.",
