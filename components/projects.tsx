@@ -25,7 +25,7 @@ export default function Projects() {
       case "year":
         return filteredProjects.sort((a, b) => b.year - a.year)
       case "position":
-        return filteredProjects.sort((a, b) => a.position.localeCompare(b.position))
+        return filteredProjects.sort((a, b) => positions.indexOf(a.position) - positions.indexOf(b.position))
       case "importance":
         return filteredProjects.sort((a, b) => b.importance - a.importance)
       default:

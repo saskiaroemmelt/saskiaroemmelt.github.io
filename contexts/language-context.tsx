@@ -97,6 +97,11 @@ Gestioné las locaciones de más de 17 créditos, muchos de los cuales fueron es
     "projects.production": "Producción",
     "projects.distribution": "Distribución",
     "projects.awards": "Premios",
+    "projects.values": { // project id indexed.
+      1: {
+
+      },
+    },
 
     // References
     "references.title": "Referencias Profesionales",
@@ -290,9 +295,9 @@ Managed locations on more than 17 credits, many of which were released in cinema
       "Time management"
     ],
     "skills.languages.values": [
-      { name: "German",  level: "Native"  },
-      { name: "English", level: "Fluent"  },
-      { name: "Spanish", level: "Fluent"  }
+      { name: "German", level: "Native" },
+      { name: "English", level: "Fluent" },
+      { name: "Spanish", level: "Fluent" }
     ],
 
     // Education
@@ -448,9 +453,9 @@ Ich habe die Locations für mehr als 17 Produktionen betreut, von denen viele im
       "Zeitmanagement"
     ],
     "skills.languages.values": [
-      { name: "Deutsch",  level: "Muttersprache" },
-      { name: "Englisch", level: "Fließend"      },
-      { name: "Spanisch", level: "Fließend"      }
+      { name: "Deutsch", level: "Muttersprache" },
+      { name: "Englisch", level: "Fließend" },
+      { name: "Spanisch", level: "Fließend" }
     ],
 
     // Education
