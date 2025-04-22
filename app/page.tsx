@@ -2,6 +2,7 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useLanguage } from "@/contexts/language-context"
+import { useTabs } from "@/contexts/tabs-context"
 
 import Hero from "@/components/hero"
 import AboutMe from "@/components/about-me"
@@ -15,6 +16,12 @@ import ScrollAnimation from "@/components/scroll-animation"
 
 export default function Home() {
   const { t } = useLanguage()
+  const { activeTab, setActiveTab } = useTabs()
+
+  // Manejar cambios en la pestaña activa
+  const handleTabChange = (value: string) => {
+    setActiveTab(value)
+  }
 
   return (
     <main className="min-h-screen bg-background">
@@ -23,7 +30,7 @@ export default function Home() {
       </ScrollAnimation>
 
       <div className="container mx-auto px-4 py-12">
-        <Tabs defaultValue="about" className="w-full">
+        <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
           <TabsList className="grid w-full grid-cols-3 md:grid-cols-7 mb-8">
             <TabsTrigger value="about">{t("nav.about")}</TabsTrigger>
             <TabsTrigger value="experience">{t("nav.experience")}</TabsTrigger>
@@ -34,44 +41,45 @@ export default function Home() {
             <TabsTrigger value="contact">{t("nav.contact")}</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="about" className="mt-6">
-            <ScrollAnimation>
+          <TabsContent value="about" className="mt-6" id="about-section">
+            <ScrollAnimation threshold={0.05}>
               <AboutMe />
             </ScrollAnimation>
           </TabsContent>
 
-          <TabsContent value="experience" className="mt-6">
-            <ScrollAnimation>
+          <TabsContent value="experience" className="mt-6" id="experience-section">
+            <ScrollAnimation threshold={0.05}>
               <Experience />
             </ScrollAnimation>
           </TabsContent>
 
-          <TabsContent value="projects" className="mt-6">
-            <ScrollAnimation>
+          <TabsContent value="projects" className="mt-6" id="projects-section">
+            {/* Umbral más bajo para la sección de proyectos */}
+            <ScrollAnimation threshold={0.01}>
               <Projects />
             </ScrollAnimation>
           </TabsContent>
 
-          <TabsContent value="references" className="mt-6">
-            <ScrollAnimation>
+          <TabsContent value="references" className="mt-6" id="references-section">
+            <ScrollAnimation threshold={0.05}>
               <References />
             </ScrollAnimation>
           </TabsContent>
 
-          <TabsContent value="skills" className="mt-6">
-            <ScrollAnimation>
+          <TabsContent value="skills" className="mt-6" id="skills-section">
+            <ScrollAnimation threshold={0.05}>
               <Skills />
             </ScrollAnimation>
           </TabsContent>
 
-          <TabsContent value="education" className="mt-6">
-            <ScrollAnimation>
+          <TabsContent value="education" className="mt-6" id="education-section">
+            <ScrollAnimation threshold={0.05}>
               <Education />
             </ScrollAnimation>
           </TabsContent>
 
-          <TabsContent value="contact" className="mt-6">
-            <ScrollAnimation>
+          <TabsContent value="contact" className="mt-6" id="contact-section">
+            <ScrollAnimation threshold={0.05}>
               <Contact />
             </ScrollAnimation>
           </TabsContent>
