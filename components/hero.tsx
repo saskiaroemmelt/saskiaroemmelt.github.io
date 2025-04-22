@@ -54,30 +54,21 @@ export default function Hero() {
           <ScrollAnimation type="fade-up" delay={400}>
             <div className="flex gap-6 text-muted-foreground justify-center">
               <a
-                href="https://imdb.com"
+                href={t("hero.href.crewunited")}
                 className="inline-flex items-center gap-1 hover:text-foreground transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                IMDb
+                Crew United
                 <ExternalLink className="h-3 w-3" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/saskia-r%C3%B6mmelt-8726b630b/"
                 className="inline-flex items-center gap-1 hover:text-foreground transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 LinkedIn
-                <ExternalLink className="h-3 w-3" />
-              </a>
-              <a
-                href="https://vimeo.com"
-                className="inline-flex items-center gap-1 hover:text-foreground transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Vimeo
                 <ExternalLink className="h-3 w-3" />
               </a>
             </div>
