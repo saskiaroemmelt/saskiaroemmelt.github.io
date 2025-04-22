@@ -8,11 +8,11 @@ type Language = "es" | "en" | "de"
 type LanguageContextType = {
   language: Language
   setLanguage: (language: Language) => void
-  translations: Record<string, Record<string, string>>
-  t: (key: string) => string
+  translations: Record<string, Record<string, any>>
+  t: (key: string) => any
 }
 
-const translations = {
+const translations: Record<string, Record<string, any>> = {
   es: {
     // Navigation
     "nav.about": "Sobre Mí",
