@@ -109,6 +109,33 @@ Gestioné las locaciones de más de 17 créditos, muchos de los cuales fueron es
     "skills.technical": "Habilidades Técnicas",
     "skills.soft": "Habilidades Personales",
     "skills.languages": "Idiomas",
+    "skills.technical.values": [
+      "Gestión de presupuestos",
+      "Coordinación de producción",
+      "Planificación de rodajes y cronogramas",
+      "Busqueda de locaciones",
+      "Gestión de locaciones",
+      "Permisos y logistica",
+      "Contratación y dirección de equipo técnico",
+      "Negociación de permisos",
+      "Tecnología y software cinematográfico",
+    ],
+    "skills.soft.values": [
+      "Resolución de problemas",
+      "Comunicación efectiva",
+      "Formación de equipos",
+      "Liderazgo de equipos",
+      "Trabajo bajo presión",
+      "Adaptabilidad",
+      "Negociación",
+      "Atención al detalle",
+      "Gestión del tiempo",
+    ],
+    "skills.languages.values": [
+      { name: "Aleman", level: "Nativo" },
+      { name: "Inglés", level: "Fluido" },
+      { name: "Español", level: "Fluido" },
+    ],
 
     // Education
     "education.title": "Educación y Formación",
@@ -240,6 +267,33 @@ Managed locations on more than 17 credits, many of which were released in cinema
     "skills.technical": "Technical Skills",
     "skills.soft": "Soft Skills",
     "skills.languages": "Languages",
+    "skills.technical.values": [
+      "Budget management",
+      "Production coordination",
+      "Scheduling",
+      "Location scouting",
+      "Location management",
+      "Permits and logistics",
+      "Hiring and supervision of technical crew",
+      "Permits Negotiation",
+      "Film software technology"
+    ],
+    "skills.soft.values": [
+      "Problem solving",
+      "Effective communication",
+      "Team building",
+      "Team leadership",
+      "Working under pressure",
+      "Adaptability",
+      "Negotiation",
+      "Attention to detail",
+      "Time management"
+    ],
+    "skills.languages.values": [
+      { name: "German",  level: "Native"  },
+      { name: "English", level: "Fluent"  },
+      { name: "Spanish", level: "Fluent"  }
+    ],
 
     // Education
     "education.title": "Education and Training",
@@ -371,6 +425,33 @@ Ich habe die Locations für mehr als 17 Produktionen betreut, von denen viele im
     "skills.technical": "Technische Fähigkeiten",
     "skills.soft": "Soft Skills",
     "skills.languages": "Sprachen",
+    "skills.technical.values": [
+      "Budgetverwaltung",
+      "Produktionskoordination",
+      "Dreh- und Terminplanung",
+      "Locationsuche",
+      "Location Management",
+      "Genehmigungen und Logistik",
+      "Anwerbung und Leitung des Technikteams",
+      "Genehmigungsverhandlungen",
+      "Filmtechnik und -software"
+    ],
+    "skills.soft.values": [
+      "Problemlösung",
+      "Effektive Kommunikation",
+      "Teambildung",
+      "Teamführung",
+      "Arbeiten unter Druck",
+      "Anpassungsfähigkeit",
+      "Verhandlungsführung",
+      "Detailorientierung",
+      "Zeitmanagement"
+    ],
+    "skills.languages.values": [
+      { name: "Deutsch",  level: "Muttersprache" },
+      { name: "Englisch", level: "Fließend"      },
+      { name: "Spanisch", level: "Fließend"      }
+    ],
 
     // Education
     "education.title": "Bildung und Ausbildung",
@@ -424,7 +505,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem("language", language)
   }, [language])
 
-  const t = (key: string): string => {
+  const t = (key: string): any => {
     return translations[language][key] || key
   }
 
