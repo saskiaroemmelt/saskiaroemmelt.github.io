@@ -6,7 +6,7 @@ interface ScrollAnimationProps {
   children: ReactNode
   className?: string
   type?: "fade-up" | "fade-in"
-  delay?: 0 | 100 | 200 | 300 | 400 | 500
+  delay?: 0 | 100 | 200 | 300 | 350 | 400 | 500
   threshold?: number
 }
 

@@ -51,7 +51,7 @@ export default function Hero() {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation type="fade-up" delay={400}>
+          <ScrollAnimation type="fade-up" delay={350}>
             <div className="flex gap-6 text-muted-foreground justify-center">
               <a
                 href={t("hero.href.crewunited")}
@@ -69,6 +69,15 @@ export default function Hero() {
                 rel="noopener noreferrer"
               >
                 LinkedIn
+                <ExternalLink className="h-3 w-3" />
+              </a>
+              <a
+                href={'/cv_saskia.pdf'}
+                className="inline-flex items-center gap-1 hover:text-foreground transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Curriculum Vitae
                 <ExternalLink className="h-3 w-3" />
               </a>
             </div>
