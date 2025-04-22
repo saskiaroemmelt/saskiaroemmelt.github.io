@@ -14,28 +14,28 @@ export default function LanguageSwitcher() {
         <Button variant="ghost" size="icon" className="w-9 px-0">
           {language === "es" && (
             <Image
-              src="/placeholder.svg?height=24&width=24"
+              src="/es.svg?height=16&width=24"
               alt="Español"
               width={24}
-              height={24}
+              height={16}
               className="rounded-sm"
             />
           )}
           {language === "en" && (
             <Image
-              src="/placeholder.svg?height=24&width=24"
+              src="/en.svg?height=16&width=24"
               alt="English"
               width={24}
-              height={24}
+              height={16}
               className="rounded-sm"
             />
           )}
           {language === "de" && (
             <Image
-              src="/placeholder.svg?height=24&width=24"
+              src="/de.svg?height=16&width=24"
               alt="Deutsch"
               width={24}
-              height={24}
+              height={16}
               className="rounded-sm"
             />
           )}
@@ -46,10 +46,10 @@ export default function LanguageSwitcher() {
         <DropdownMenuItem onClick={() => setLanguage("es")} className="cursor-pointer">
           <div className="flex items-center gap-2">
             <Image
-              src="/placeholder.svg?height=20&width=20"
+              src="/es.svg?height=16&width=24"
               alt="Español"
-              width={20}
-              height={20}
+              width={24}
+              height={16}
               className="rounded-sm"
             />
             <span>Español</span>
@@ -58,10 +58,10 @@ export default function LanguageSwitcher() {
         <DropdownMenuItem onClick={() => setLanguage("en")} className="cursor-pointer">
           <div className="flex items-center gap-2">
             <Image
-              src="/placeholder.svg?height=20&width=20"
+              src="/en.svg?height=16&width=24"
               alt="English"
-              width={20}
-              height={20}
+              width={24}
+              height={16}
               className="rounded-sm"
             />
             <span>English</span>
@@ -70,10 +70,10 @@ export default function LanguageSwitcher() {
         <DropdownMenuItem onClick={() => setLanguage("de")} className="cursor-pointer">
           <div className="flex items-center gap-2">
             <Image
-              src="/placeholder.svg?height=20&width=20"
+              src="/de.svg?height=16&width=24"
               alt="Deutsch"
-              width={20}
-              height={20}
+              width={24}
+              height={16}
               className="rounded-sm"
             />
             <span>Deutsch</span>
