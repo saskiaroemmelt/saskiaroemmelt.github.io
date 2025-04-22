@@ -25,9 +25,9 @@ const translations = {
 
     // Hero
     "hero.title": "Saskia Römmelt",
-    "hero.subtitle": "Unit Production Manager & Location Manager",
+    "hero.subtitle": "Jefa de Producción & Jefa de Locaciones",
     "hero.description":
-      "Profesional con amplia experiencia en la industria cinematográfica, especializado en la gestión de producción y localización para proyectos de cine y televisión.",
+      "¡Hola! Soy Saskia Römmelt, una profesional de producción audiovisual germano-argentina con mas de 9 años de experiencia en la industria cinematográfica, especializada en la gestión de producción y localización para proyectos de cine y televisión",
     "hero.contact": "Contáctame",
     "hero.projects": "Ver Proyectos",
 
@@ -142,7 +142,7 @@ const translations = {
     "hero.title": "Saskia Römmelt",
     "hero.subtitle": "Unit Production Manager & Location Manager",
     "hero.description":
-      "Professional with extensive experience in the film industry, specialized in production management and location scouting for film and television projects.",
+      "Hi! I'm Saskia Römmelt, a German‑Argentine audiovisual production professional with over 9 years of experience in the film industry, specialized in production management and location management for film and television projects",
     "hero.contact": "Contact Me",
     "hero.projects": "View Projects",
 
@@ -255,9 +255,9 @@ const translations = {
 
     // Hero
     "hero.title": "Saskia Römmelt",
-    "hero.subtitle": "Unit Production Manager & Location Manager",
+    "hero.subtitle": "1. Aufnahmeleiterin & Motivaufnahmeleiterin",
     "hero.description":
-      "Fachmann mit umfangreicher Erfahrung in der Filmindustrie, spezialisiert auf Produktionsmanagement und Locationsuche für Film- und Fernsehprojekte.",
+      "Hallo! Ich bin Saskia Römmelt, eine deutsch‑argentinische Fachkraft für audiovisuelle Produktion mit mehr als neun Jahren Erfahrung in der Filmbranche, spezialisiert auf Produktions‑ und Location‑Management für Kino‑ und TV‑Projekte",
     "hero.contact": "Kontaktiere Mich",
     "hero.projects": "Projekte Ansehen",
 
