@@ -14,10 +14,7 @@ export default function AboutMe() {
           <CardDescription>{t("about.subtitle")}</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <p>{t("about.paragraph1")}</p>
-          <p>{t("about.paragraph2")}</p>
-          <p>{t("about.paragraph3")}</p>
-          <p>{t("about.paragraph4")}</p>
+          <p style={{ whiteSpace: "pre-line" }}>{t("about.paragraph")}</p>
         </CardContent>
       </Card>
     </section>

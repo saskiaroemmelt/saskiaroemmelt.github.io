@@ -20,18 +20,30 @@ export default function Experience() {
       period: t("experience.lm.period"),
       description: t("experience.lm.description"),
     },
-    {
-      title: t("experience.pa.title"),
-      company: t("experience.pa.company"),
-      period: t("experience.pa.period"),
-      description: t("experience.pa.description"),
-    },
-    {
-      title: t("experience.ad.title"),
-      company: t("experience.ad.company"),
-      period: t("experience.ad.period"),
-      description: t("experience.ad.description"),
-    },
+    // { // Don't show non important ones
+    //   title: t("experience.al.title"),
+    //   company: t("experience.al.company"),
+    //   period: t("experience.al.period"),
+    //   description: t("experience.al.description"),
+    // },
+    // {
+    //   title: t("experience.ap.title"),
+    //   company: t("experience.ap.company"),
+    //   period: t("experience.ap.period"),
+    //   description: t("experience.ap.description"),
+    // },
+    // {
+    //   title: t("experience.ayp.title"),
+    //   company: t("experience.ayp.company"),
+    //   period: t("experience.ayp.period"),
+    //   description: t("experience.ayp.description"),
+    // },
+    // {
+    //   title: t("experience.a.title"),
+    //   company: t("experience.a.company"),
+    //   period: t("experience.a.period"),
+    //   description: t("experience.a.description"),
+    // },
   ]
 
   return (
@@ -55,7 +67,7 @@ export default function Experience() {
                   <div className="text-sm text-muted-foreground">
                     {exp.company} | {exp.period}
                   </div>
-                  <p className="text-muted-foreground">{exp.description}</p>
+                  {exp.description != 'invalid'?<p style={{ whiteSpace: "pre-line" }} className="text-muted-foreground">{exp.description}</p>:null}
                 </div>
               </div>
             ))}

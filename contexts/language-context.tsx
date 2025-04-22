@@ -27,7 +27,7 @@ const translations = {
     "hero.title": "Saskia Römmelt",
     "hero.subtitle": "Jefa de Producción & Jefa de Locaciones",
     "hero.description":
-      "¡Hola! Soy Saskia Römmelt, una profesional de producción audiovisual germano-argentina con mas de 9 años de experiencia en la industria cinematográfica, especializada en la gestión de producción y localización para proyectos de cine y televisión",
+      "¡Hola! Soy Saskia Römmelt, una profesional de producción audiovisual germano-argentina con mas de 9 años de experiencia en la industria cinematográfica, especializada en la gestión de producción y localización para proyectos de cine y televisión con reconocimientos como un International Emmy Award y una nominación al Cannes Film Festival",
     "hero.contact": "Contáctame",
     "hero.projects": "Ver Proyectos",
     "hero.href.crewunited": "https://www.crew-united.com/es/Saskia-Roemmelt_444329.html",
@@ -36,42 +36,52 @@ const translations = {
     "about.title": "Sobre Mí",
     "about.subtitle": "Un poco sobre mi trayectoria y pasión por el cine",
     // About Me Content
-    "about.paragraph1":
-      "Soy un apasionado profesional de la industria cinematográfica con más de [X] años de experiencia trabajando como Unit Production Manager y Location Manager en diversos proyectos. Mi carrera me ha permitido colaborar con talentosos directores, productores y equipos creativos en la realización de películas, series y documentales que han dejado huella en el público.",
-    "about.paragraph2":
-      "Mi enfoque se centra en la planificación meticulosa, la resolución eficiente de problemas y la gestión efectiva de recursos para garantizar que cada producción alcance su máximo potencial. Me especializo en coordinar todos los aspectos logísticos de la producción, desde la búsqueda y gestión de locaciones hasta la supervisión del presupuesto y el cronograma.",
-    "about.paragraph3":
-      "A lo largo de mi carrera, he desarrollado una sólida red de contactos en la industria y un profundo conocimiento de los procesos de producción cinematográfica. Mi objetivo es siempre contribuir a crear un ambiente de trabajo colaborativo donde la visión creativa pueda florecer dentro de los parámetros prácticos de la producción.",
-    "about.paragraph4":
-      "Cuando no estoy en un set, me dedico a explorar nuevas locaciones, ampliar mi red profesional y mantenerme actualizado sobre las últimas tendencias y tecnologías en la industria del cine.",
+    "about.paragraph":
+      `Soy una apasionada profesional de la industria cinematográfica con más de 9 años de experiencia trabajando como jefa de producción y jefa de locaciones en diversos proyectos y múltiples países. Mi carrera me ha permitido colaborar con talentosos directores, productores y equipos creativos en la realización de películas, series y documentales que han dejado huella en el público.
+
+Mi enfoque se centra en la planificación meticulosa, la resolución eficiente de problemas y la gestión efectiva de recursos para garantizar que cada producción alcance su máximo potencial. Me especializo en coordinar todos los aspectos logísticos de la producción, desde la búsqueda y gestión de locaciones hasta la supervisión del presupuesto y el cronograma.
+
+A lo largo de mi carrera he desarrollado una sólida red de contactos en la industria y un profundo conocimiento de los procesos de producción cinematográfica. Mi objetivo es siempre contribuir a crear un ambiente de trabajo colaborativo donde la visión creativa pueda florecer dentro de los parámetros prácticos de la producción.
+
+Cuando no estoy en un set, me dedico a explorar nuevas locaciones, ampliar mi red profesional y mantenerme actualizada sobre las últimas tendencias y tecnologías en la industria del cine.`,
 
     // Experience
     "experience.title": "Experiencia Profesional",
     "experience.subtitle": "Mi trayectoria en la industria cinematográfica",
     // Experience Content
-    "experience.upm.title": "Unit Production Manager",
-    "experience.upm.company": "Productora Ejemplo",
-    "experience.upm.period": "2018 - Presente",
+    "experience.upm.title": "Jefa de producción",
+    "experience.upm.company": "Independiente",
+    "experience.upm.period": "2023 - Presente",
     "experience.upm.description":
-      "Responsable de la gestión diaria de la producción, incluyendo la supervisión del presupuesto, la coordinación del equipo y la resolución de problemas logísticos. He trabajado en más de 10 largometrajes y series durante este periodo.",
+      "Responsable de la gestión diaria de la producción, incluyendo la supervisión de presupuestos de hasta €6 M, la coordinación de equipos de alrededor de 150 personas, el armado de call sheets, la resolución de problemas logísticos y el reclutamiento de personal especializado para el departamento de producción",
 
-    "experience.lm.title": "Location Manager",
-    "experience.lm.company": "Cine Internacional",
-    "experience.lm.period": "2015 - 2018",
+    "experience.lm.title": "Jefa de locaciones",
+    "experience.lm.company": "Independiente",
+    "experience.lm.period": "2016 - 2023",
     "experience.lm.description":
-      "Encargado de la búsqueda, negociación y gestión de locaciones para rodajes. Coordiné permisos, logística y relaciones con propietarios y autoridades locales para garantizar rodajes sin contratiempos.",
+      `Encargada de la búsqueda, negociación y gestión de locaciones para rodajes. Coordiné permisos, logística y relaciones con propietarios y autoridades locales para garantizar rodajes sin contratiempos en más de 200 locaciones a lo largo de múltiples países como Bélgica, Dinamarca, Alemania, Rumania, entre otros
 
-    "experience.pa.title": "Asistente de Producción",
-    "experience.pa.company": "Estudios Cinematográficos",
-    "experience.pa.period": "2012 - 2015",
-    "experience.pa.description":
-      "Apoyé al equipo de producción en diversas tareas, desde la coordinación de casting hasta la gestión de documentación y logística diaria del set.",
+Gestioné las locaciones de más de 17 créditos, muchos de los cuales fueron estrenados en cines o en plataformas de streaming como Netflix o Amazon Prime Video; entre ellos Mi Dulce Niña (ganadora del 52º International Emmy Award como Mejor Película de TV / Mini-Serie), así como The Traitor (nominada en el Festival de Cannes 2019 al Palme d'Or), la cual recaudó 9,2 millones de dólares en cines`,
 
-    "experience.ad.title": "Asistente de Dirección",
-    "experience.ad.company": "Producciones Independientes",
-    "experience.ad.period": "2010 - 2012",
-    "experience.ad.description":
-      "Colaboré estrechamente con directores en la planificación de rodajes, coordinación de actores y supervisión del plan de trabajo diario.",
+    "experience.al.title": "Asistente de locaciones",
+    "experience.al.company": "Independiente",
+    "experience.al.period": "2017 - 2020",
+    "experience.al.description": "invalid",
+
+    "experience.ap.title": "Asistente de Producción",
+    "experience.ap.company": "Independiente",
+    "experience.ap.period": "2018 - 2018",
+    "experience.ap.description": "invalid",
+
+    "experience.ayp.title": "Ayudante de Producción",
+    "experience.ayp.company": "Independiente",
+    "experience.ayp.period": "2016 - 2017",
+    "experience.ayp.description": "invalid",
+
+    "experience.a.title": "Aprendiz",
+    "experience.a.company": "Independiente",
+    "experience.a.period": "2017 - 2017",
+    "experience.a.description": "invalid",
 
     // Projects
     "projects.title": "Proyectos y Créditos",
@@ -142,7 +152,7 @@ const translations = {
     "hero.title": "Saskia Römmelt",
     "hero.subtitle": "Unit Production Manager & Location Manager",
     "hero.description":
-      "Hi! I'm Saskia Römmelt, a German‑Argentine audiovisual production professional with over 9 years of experience in the film industry, specialized in production management and location management for film and television projects",
+      "Hello! I am Saskia Römmelt, a German-Argentine audiovisual production professional with over 9 years of experience in the film industry, specialized in production and location management for film and television projects, with recognitions such as an International Emmy Award and a nomination at the Cannes Film Festival",
     "hero.contact": "Contact Me",
     "hero.projects": "View Projects",
     "hero.href.crewunited": "https://www.crew-united.com/en/Saskia-Roemmelt_444329.html",
@@ -151,42 +161,52 @@ const translations = {
     "about.title": "About Me",
     "about.subtitle": "A bit about my background and passion for cinema",
     // About Me Content
-    "about.paragraph1":
-      "I am a passionate film industry professional with over [X] years of experience working as a Unit Production Manager and Location Manager on various projects. My career has allowed me to collaborate with talented directors, producers, and creative teams in the making of films, series, and documentaries that have left a mark on audiences.",
-    "about.paragraph2":
-      "My approach focuses on meticulous planning, efficient problem-solving, and effective resource management to ensure that each production reaches its full potential. I specialize in coordinating all logistical aspects of production, from finding and managing locations to supervising the budget and schedule.",
-    "about.paragraph3":
-      "Throughout my career, I have developed a solid network of industry contacts and a deep understanding of film production processes. My goal is always to contribute to creating a collaborative work environment where creative vision can flourish within the practical parameters of production.",
-    "about.paragraph4":
-      "When I'm not on a set, I dedicate myself to exploring new locations, expanding my professional network, and staying updated on the latest trends and technologies in the film industry.",
+    "about.paragraph":
+      `I am a passionate audiovisual professional with over 9 years of experience working as a Unit Production Manager and Location Manager in various projects across multiple countries. My career has allowed me to collaborate with talented directors, producers, and creative teams in the production of films, series, and documentaries that have left a lasting impression on audiences.
+
+My approach focuses on meticulous planning, efficient problem-solving, and effective resource management to ensure each production reaches its full potential. I specialize in coordinating all logistical aspects of production, from scouting and managing locations to supervising the budget and schedule.
+
+Throughout my career, I have developed a strong network of industry contacts and a deep understanding of film production processes. My goal is always to help create a collaborative work environment where the creative vision can flourish within the practical parameters of production.
+
+When I am not on set, I dedicate myself to exploring new locations, expanding my professional network, and keeping up to date with the latest trends and technologies in the film industry.`,
 
     // Experience
     "experience.title": "Professional Experience",
     "experience.subtitle": "My career in the film industry",
     // Experience Content
     "experience.upm.title": "Unit Production Manager",
-    "experience.upm.company": "Example Productions",
-    "experience.upm.period": "2018 - Present",
+    "experience.upm.company": "Freelance",
+    "experience.upm.period": "2023 - Present",
     "experience.upm.description":
       "Responsible for the daily management of production, including budget supervision, team coordination, and solving logistical problems. I have worked on more than 10 feature films and series during this period.",
 
     "experience.lm.title": "Location Manager",
-    "experience.lm.company": "International Cinema",
-    "experience.lm.period": "2015 - 2018",
+    "experience.lm.company": "Freelance",
+    "experience.lm.period": "2016 - 2023",
     "experience.lm.description":
-      "In charge of searching, negotiating, and managing locations for shoots. I coordinated permits, logistics, and relationships with owners and local authorities to ensure smooth filming.",
+      `Responsible for scouting, negotiating, and managing locations for film shoots. Coordinated permits, logistics, and relationships with property owners and local authorities to ensure smooth shoots in over 200 locations across multiple countries, including Belgium, Denmark, Germany, Romania, among others
 
-    "experience.pa.title": "Production Assistant",
-    "experience.pa.company": "Film Studios",
-    "experience.pa.period": "2012 - 2015",
-    "experience.pa.description":
-      "I supported the production team in various tasks, from casting coordination to document management and daily set logistics.",
+Managed locations on more than 17 credits, many of which were released in cinemas or on streaming platforms such as Netflix and Amazon Prime Video; among them Dear Child (winner of the 52nd International Emmy Award for Best TV Movie / Mini-Series), as well as The Traitor (nominated for the Palme d'Or at the 2019 Cannes Film Festival), which grossed 9.2 million USD at the box office`,
 
-    "experience.ad.title": "Assistant Director",
-    "experience.ad.company": "Independent Productions",
-    "experience.ad.period": "2010 - 2012",
-    "experience.ad.description":
-      "I worked closely with directors in planning shoots, coordinating actors, and supervising the daily work plan.",
+    "experience.al.title": "Assistant Location Manager",
+    "experience.al.company": "Freelance",
+    "experience.al.period": "2017 - 2020",
+    "experience.al.description": "invalid",
+
+    "experience.ap.title": "Assistant Production Manager",
+    "experience.ap.company": "Freelance",
+    "experience.ap.period": "2018 - 2018",
+    "experience.ap.description": "invalid",
+
+    "experience.ayp.title": "Production Runner",
+    "experience.ayp.company": "Freelance",
+    "experience.ayp.period": "2016 - 2017",
+    "experience.ayp.description": "invalid",
+
+    "experience.a.title": "Runner",
+    "experience.a.company": "Freelance",
+    "experience.a.period": "2017 - 2017",
+    "experience.a.description": "invalid",
 
     // Projects
     "projects.title": "Projects and Credits",
@@ -257,7 +277,7 @@ const translations = {
     "hero.title": "Saskia Römmelt",
     "hero.subtitle": "1. Aufnahmeleiterin & Motivaufnahmeleiterin",
     "hero.description":
-      "Hallo! Ich bin Saskia Römmelt, eine deutsch‑argentinische Fachkraft für audiovisuelle Produktion mit mehr als neun Jahren Erfahrung in der Filmbranche, spezialisiert auf Produktions‑ und Location‑Management für Kino‑ und TV‑Projekte",
+      "Hallo! Ich bin Saskia Römmelt, eine deutsch-argentinische Fachkraft für audiovisuelle Produktion mit mehr als neun Jahren Erfahrung in der Filmbranche, spezialisiert auf Produktions- und Location-Management für Kino- und Fernsehprojekte, ausgezeichnet mit einem International Emmy Award und einer Nominierung beim Filmfestival von Cannes",
     "hero.contact": "Kontaktiere Mich",
     "hero.projects": "Projekte Ansehen",
     "hero.href.crewunited": "https://www.crew-united.com/de/Saskia-Roemmelt_444329.html",
@@ -266,42 +286,52 @@ const translations = {
     "about.title": "Über Mich",
     "about.subtitle": "Ein wenig über meinen Hintergrund und meine Leidenschaft für das Kino",
     // About Me Content
-    "about.paragraph1":
-      "Ich bin ein leidenschaftlicher Filmbranchenprofi mit über [X] Jahren Erfahrung als Unit Production Manager und Location Manager bei verschiedenen Projekten. Meine Karriere hat es mir ermöglicht, mit talentierten Regisseuren, Produzenten und Kreativteams bei der Erstellung von Filmen, Serien und Dokumentationen zusammenzuarbeiten, die beim Publikum Eindruck hinterlassen haben.",
-    "about.paragraph2":
-      "Mein Ansatz konzentriert sich auf akribische Planung, effiziente Problemlösung und effektives Ressourcenmanagement, um sicherzustellen, dass jede Produktion ihr volles Potenzial ausschöpft. Ich bin spezialisiert auf die Koordination aller logistischen Aspekte der Produktion, von der Suche und Verwaltung von Drehorten bis zur Überwachung des Budgets und des Zeitplans.",
-    "about.paragraph3":
-      "Im Laufe meiner Karriere habe ich ein solides Netzwerk von Branchenkontakten und ein tiefes Verständnis für Filmproduktionsprozesse entwickelt. Mein Ziel ist es immer, zu einer kollaborativen Arbeitsumgebung beizutragen, in der kreative Vision innerhalb der praktischen Parameter der Produktion gedeihen kann.",
-    "about.paragraph4":
-      "Wenn ich nicht an einem Set bin, widme ich mich der Erkundung neuer Drehorte, dem Ausbau meines beruflichen Netzwerks und halte mich über die neuesten Trends und Technologien in der Filmindustrie auf dem Laufenden.",
+    "about.paragraph":
+      `Ich bin eine leidenschaftliche Fachkraft in der Filmbranche mit mehr als neun Jahren Erfahrung als Produktionsleiterin und Location Managerin bei verschiedenen Projekten in mehreren Ländern. Im Laufe meiner Karriere hatte ich die Möglichkeit, mit talentierten Regisseur:innen, Produzent:innen und Kreativteams an Filmen, Serien und Dokumentarfilmen zu arbeiten, die beim Publikum einen bleibenden Eindruck hinterlassen haben.
+
+Mein Fokus liegt auf sorgfältiger Planung, effizienter Problemlösung und effektiver Ressourcenverwaltung, damit jede Produktion ihr volles Potenzial entfalten kann. Ich bin spezialisiert auf die Koordination sämtlicher logistischen Aspekte der Produktion – von der Suche und Verwaltung von Drehorten bis hin zur Überwachung von Budget und Zeitplan.
+
+Im Laufe meiner Karriere habe ich ein solides Netzwerk in der Branche sowie ein tiefes Verständnis für die Abläufe der Filmproduktion aufgebaut. Mein Ziel ist es stets, zu einer kollaborativen Arbeitsatmosphäre beizutragen, in der kreative Visionen im praktischen Rahmen der Produktion gedeihen können.
+
+Wenn ich nicht am Set bin, erkunde ich gerne neue Drehorte, erweitere mein berufliches Netzwerk und halte mich über aktuelle Trends und neue Technologien der Filmindustrie auf dem Laufenden.`,
 
     // Experience
     "experience.title": "Berufserfahrung",
     "experience.subtitle": "Meine Karriere in der Filmindustrie",
     // Experience Content
-    "experience.upm.title": "Unit Production Manager",
-    "experience.upm.company": "Beispiel Produktionen",
-    "experience.upm.period": "2018 - Gegenwart",
+    "experience.upm.title": "1. Aufnahmeleiterin",
+    "experience.upm.company": "Freelance",
+    "experience.upm.period": "2023 - Gegenwart",
     "experience.upm.description":
       "Verantwortlich für das tägliche Management der Produktion, einschließlich Budgetüberwachung, Teamkoordination und Lösung logistischer Probleme. Ich habe in dieser Zeit an mehr als 10 Spielfilmen und Serien gearbeitet.",
 
-    "experience.lm.title": "Location Manager",
-    "experience.lm.company": "Internationales Kino",
-    "experience.lm.period": "2015 - 2018",
+    "experience.lm.title": "Motivaufnahmeleiterin",
+    "experience.lm.company": "Freelance",
+    "experience.lm.period": "2016 - 2023",
     "experience.lm.description":
-      "Zuständig für die Suche, Verhandlung und Verwaltung von Drehorten. Ich koordinierte Genehmigungen, Logistik und Beziehungen zu Eigentümern und lokalen Behörden, um reibungslose Dreharbeiten zu gewährleisten.",
+      `Verantwortlich für die Suche, Verhandlung und Betreuung von Drehorten für Filmproduktionen. Koordination von Genehmigungen, Logistik sowie Beziehungen zu Eigentümern und lokalen Behörden, um reibungslose Dreharbeiten an über 200 Drehorten in mehreren Ländern – darunter Belgien, Dänemark, Deutschland, Rumänien und andere – zu gewährleisten
 
-    "experience.pa.title": "Produktionsassistent",
-    "experience.pa.company": "Filmstudios",
-    "experience.pa.period": "2012 - 2015",
-    "experience.pa.description":
-      "Ich unterstützte das Produktionsteam bei verschiedenen Aufgaben, von der Casting-Koordination bis zum Dokumentenmanagement und der täglichen Set-Logistik.",
+Ich habe die Locations für mehr als 17 Produktionen betreut, von denen viele im Kino oder auf Streaming-Plattformen wie Netflix und Amazon Prime Video veröffentlicht wurden; darunter Liebes Kind (Gewinner des 52. International Emmy Award als Bester TV-Film / Mini-Serie) sowie The Traitor (nominiert für die Goldene Palme bei den Filmfestspielen von Cannes 2019), der an den Kinokassen 9,2 Millionen US-Dollar einspielte`,
 
-    "experience.ad.title": "Regieassistent",
-    "experience.ad.company": "Unabhängige Produktionen",
-    "experience.ad.period": "2010 - 2012",
-    "experience.ad.description":
-      "Ich arbeitete eng mit Regisseuren bei der Planung von Dreharbeiten, der Koordination von Schauspielern und der Überwachung des täglichen Arbeitsplans zusammen.",
+    "experience.al.title": "Assistentin der Motiv-AL",
+    "experience.al.company": "Freiberuflich",
+    "experience.al.period": "2017 - 2020",
+    "experience.al.description": "invalid",
+
+    "experience.ap.title": "Produktionsassistentin",
+    "experience.ap.company": "Freiberuflich",
+    "experience.ap.period": "2018 - 2018",
+    "experience.ap.description": "invalid",
+
+    "experience.ayp.title": "Produktionssekretärin",
+    "experience.ayp.company": "Freiberuflich",
+    "experience.ayp.period": "2016 - 2017",
+    "experience.ayp.description": "invalid",
+
+    "experience.a.title": "Set-Runner",
+    "experience.a.company": "Freiberuflich",
+    "experience.a.period": "2017 - 2017",
+    "experience.a.description": "invalid",
 
     // Projects
     "projects.title": "Projekte und Credits",
