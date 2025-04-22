@@ -9,28 +9,28 @@ export default function References() {
 
   const references = [
     {
-      name: "Ana Martínez",
-      position: "Directora",
-      company: "Productora Cinematográfica",
-      quote:
-        "He trabajado con este profesional en tres proyectos diferentes y siempre ha demostrado una capacidad excepcional para resolver problemas y mantener la producción en marcha incluso en las circunstancias más difíciles.",
+      name: "Test One",
+      position: "Position One",
+      company: "Company One",
+      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue orci ac augue imperdiet luctus. Donec placerat rutrum quam, dictum tempor augue semper in. Cras ac mi mattis, dignissim arcu non, viverra turpis. In ac fringilla ipsum",
+        // "He trabajado con este profesional en tres proyectos diferentes y siempre ha demostrado una capacidad excepcional para resolver problemas y mantener la producción en marcha incluso en las circunstancias más difíciles.",
+      contact: "(+12) 345 678 90",
+    },
+    {
+      name: "Test Two",
+      position: "Position Two",
+      company: "Company Two",
+      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue orci ac augue imperdiet luctus. Donec placerat rutrum quam, dictum tempor augue semper in. Cras ac mi mattis, dignissim arcu non, viverra turpis. In ac fringilla ipsum",
+        // "Su conocimiento de locaciones y capacidad para negociar permisos complejos fue fundamental para el éxito de nuestra película. Altamente recomendado para cualquier producción que busque eficiencia y profesionalismo.",
       contact: "Disponible bajo petición",
     },
     {
-      name: "Carlos Rodríguez",
-      position: "Productor Ejecutivo",
-      company: "Estudios Internacionales",
-      quote:
-        "Su conocimiento de locaciones y capacidad para negociar permisos complejos fue fundamental para el éxito de nuestra película. Altamente recomendado para cualquier producción que busque eficiencia y profesionalismo.",
-      contact: "Disponible bajo petición",
-    },
-    {
-      name: "Laura Sánchez",
-      position: "Directora de Producción",
-      company: "Televisión Nacional",
-      quote:
-        "Un colaborador excepcional que entiende tanto los aspectos creativos como logísticos de la producción cinematográfica. Su atención al detalle y capacidad para anticipar problemas nos ahorró tiempo y recursos valiosos.",
-      contact: "Disponible bajo petición",
+      name: "Test Three",
+      position: "Position Three",
+      company: "Company Three",
+      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue orci ac augue imperdiet luctus. Donec placerat rutrum quam, dictum tempor augue semper in. Cras ac mi mattis, dignissim arcu non, viverra turpis. In ac fringilla ipsum",
+        // "Un colaborador excepcional que entiende tanto los aspectos creativos como logísticos de la producción cinematográfica. Su atención al detalle y capacidad para anticipar problemas nos ahorró tiempo y recursos valiosos.",
+      contact: "(+54) 01 2345 6789",
     },
   ]
 
