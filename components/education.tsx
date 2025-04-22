@@ -10,37 +10,26 @@ export default function Education() {
 
   const education = [
     {
-      degree: "Licenciatura en Producción Audiovisual",
-      institution: "Universidad de Cine y Artes Visuales",
-      period: "2006 - 2010",
-      description:
-        "Especialización en gestión de producción cinematográfica. Proyecto final: Producción de un cortometraje premiado en festivales estudiantiles.",
+      degree: t("education.university.degree"),
+      institution: "Rheinische Fachhochschule Köln",
+      period: "2014 - 2017",
+      description: t("education.university.description")
+      //"Especialización en gestión de producción cinematográfica. Proyecto final: Producción de un cortometraje premiado en festivales estudiantiles.",
     },
     {
-      degree: "Máster en Gestión Cultural",
-      institution: "Instituto de Artes Contemporáneas",
-      period: "2011 - 2012",
-      description:
-        "Enfoque en la gestión de proyectos culturales y cinematográficos. Tesis sobre modelos de financiación en el cine independiente.",
+      degree: t("education.school.degree"),
+      institution: "Freiherr-vom-Stein-Schule Fulda",
+      period: "2005 - 2013",
+      description: t("education.school.description")
     },
   ]
 
   const certifications = [
-    {
-      name: "Certificación en Gestión de Producción Avanzada",
-      institution: "Academia de Cine",
-      year: "2015",
-    },
-    {
-      name: "Curso de Especialización en Locaciones Cinematográficas",
-      institution: "Escuela Internacional de Cine",
-      year: "2016",
-    },
-    {
-      name: "Taller de Presupuestos y Financiación para Cine",
-      institution: "Fundación Cinematográfica",
-      year: "2018",
-    },
+    // {
+    //   name: "Sample text",
+    //   institution: "Sample place",
+    //   year: "1234",
+    // },
   ]
 
   return (
@@ -64,29 +53,33 @@ export default function Education() {
                     <p className="text-sm text-muted-foreground">
                       {edu.institution} | {edu.period}
                     </p>
-                    <p className="mt-2 text-sm">{edu.description}</p>
+                    {edu.description != 'invalid' ? <p className="mt-2 text-sm">{edu.description}</p> : null}
                   </div>
                 ))}
               </div>
             </div>
 
-            <div>
-              <h3 className="font-semibold mb-4 flex items-center gap-2">
-                <Award className="h-5 w-5" />
-                {t("education.certifications")}
-              </h3>
-              <div className="space-y-4">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-medium text-sm">{cert.name}</h4>
-                      <p className="text-xs text-muted-foreground">{cert.institution}</p>
-                    </div>
-                    <Badge variant="outline">{cert.year}</Badge>
+            {
+              certifications.length ?
+                <div>
+                  <h3 className="font-semibold mb-4 flex items-center gap-2">
+                    <Award className="h-5 w-5" />
+                    {t("education.certifications")}
+                  </h3>
+                  <div className="space-y-4">
+                    {certifications.map((cert, index) => (
+                      <div key={index} className="flex justify-between items-start">
+                        <div>
+                          <h4 className="font-medium text-sm">{cert.name}</h4>
+                          <p className="text-xs text-muted-foreground">{cert.institution}</p>
+                        </div>
+                        <Badge variant="outline">{cert.year}</Badge>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            </div>
+                </div>
+                : null
+            }
 
             <div>
               <h3 className="font-semibold mb-4 flex items-center gap-2">

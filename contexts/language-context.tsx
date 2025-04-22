@@ -112,12 +112,18 @@ Gestioné las locaciones de más de 17 créditos, muchos de los cuales fueron es
 
     // Education
     "education.title": "Educación y Formación",
-    "education.subtitle": "Estudios académicos y certificaciones profesionales",
+    "education.subtitle": "Estudios académicos",
     "education.formal": "Educación Formal",
     "education.certifications": "Certificaciones",
     "education.continuous": "Formación Continua",
     "education.continuousText":
-      "Participo regularmente en talleres, seminarios y conferencias sobre producción cinematográfica, nuevas tecnologías audiovisuales y tendencias en la industria para mantenerme actualizado en un sector en constante evolución.",
+      "Participo regularmente en talleres, seminarios y conferencias sobre producción cinematográfica, nuevas tecnologías audiovisuales y tendencias en la industria para mantenerme actualizada en un sector en constante evolución.",
+
+    "education.university.degree": "Licenciatura en Administración y Gestión de Medios",
+    "education.university.description": "Me especialicé en Gestión de Medios con énfasis en administración, recursos humanos, control de gestión, marketing y planificación de medios, complementando mi educación con conocimientos en derecho, periodismo y producción audiovisual para obtener una visión integral del sector",
+
+    "education.school.degree": "Título de Bachiller",
+    "education.school.description": "invalid",
 
     // Contact
     "contact.title": "Contacto",
@@ -237,12 +243,18 @@ Managed locations on more than 17 credits, many of which were released in cinema
 
     // Education
     "education.title": "Education and Training",
-    "education.subtitle": "Academic studies and professional certifications",
+    "education.subtitle": "Academic studies",
     "education.formal": "Formal Education",
     "education.certifications": "Certifications",
     "education.continuous": "Continuous Learning",
     "education.continuousText":
       "I regularly participate in workshops, seminars, and conferences on film production, new audiovisual technologies, and industry trends to stay updated in a constantly evolving sector.",
+
+    "education.university.degree": "Bachelor of Arts - BA, Media Management",
+    "education.university.description": "I specialized in Media Management with an emphasis on administration, human resources, management control, marketing, and media planning, complementing my education with knowledge in law, journalism, and audiovisual production to gain a comprehensive understanding of the sector",
+
+    "education.school.degree": "High School Diploma",
+    "education.school.description": "invalid",
 
     // Contact
     "contact.title": "Contact",
@@ -362,12 +374,18 @@ Ich habe die Locations für mehr als 17 Produktionen betreut, von denen viele im
 
     // Education
     "education.title": "Bildung und Ausbildung",
-    "education.subtitle": "Akademische Studien und berufliche Zertifizierungen",
+    "education.subtitle": "Akademische Studien",
     "education.formal": "Formale Bildung",
     "education.certifications": "Zertifizierungen",
     "education.continuous": "Kontinuierliches Lernen",
     "education.continuousText":
       "Ich nehme regelmäßig an Workshops, Seminaren und Konferenzen über Filmproduktion, neue audiovisuelle Technologien und Branchentrends teil, um in einem sich ständig weiterentwickelnden Sektor auf dem neuesten Stand zu bleiben.",
+
+    "education.university.degree": "Marketing und Medienmanagement (Bachelor of Arts)",
+    "education.university.description": "Ich habe mich auf Medienmanagement mit Schwerpunkt auf Verwaltung, Personalwesen, Controlling, Marketing und Medienplanung spezialisiert und meine Ausbildung durch Kenntnisse in Recht, Journalismus und audiovisueller Produktion ergänzt, um einen umfassenden Einblick in die Branche zu erhalten",
+
+    "education.school.degree": "Abitur",
+    "education.school.description": "invalid",
 
     // Contact
     "contact.title": "Kontakt",
