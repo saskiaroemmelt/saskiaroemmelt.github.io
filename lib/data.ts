@@ -15,7 +15,11 @@ export type Project = {
     en: string[]
     de: string[]
   }
-  notes?: string
+  notes?: {
+    es: string
+    en: string
+    de: string
+  }
   importance: number
   countries: {
     es: string[]
@@ -87,7 +91,7 @@ export const projects: Project[] = [
     production: "Claussen+Putz Filmproduktion GmbH",
     distributor: "TV",
     awards: { es: [], en: [], de: [] },
-    notes: "Sustitución de 2 semanas",
+    notes: { es: "Sustitución de dos semanas", en: "Two-week replacement", de: "Zweiwöchige Vertretung" },
     importance: 8,
     countries: { es: ["Alemania"], en: ["Germany"], de: ["Deutschland"] },
     type: { es: "Serie de TV", en: "TV series", de: "TV-Serie" },

@@ -96,7 +96,10 @@ Gestioné las locaciones de más de 17 créditos, muchos de los cuales fueron es
     "projects.director": "Director",
     "projects.production": "Producción",
     "projects.distribution": "Distribución",
-    "projects.awards": "Premios",
+    "projects.awards": "Premios y reconocimientos",
+    "projects.countries": "Países",
+    "projects.channels": "Canales de transmisión",
+    "projects.additional_notes": "Información Adicional",
 
     // References
     "references.title": "Referencias Profesionales",
@@ -255,6 +258,9 @@ Managed locations on more than 17 credits, many of which were released in cinema
     "projects.production": "Production",
     "projects.distribution": "Distribution",
     "projects.awards": "Awards",
+    "projects.countries": "Countries",
+    "projects.channels": "Channels",
+    "projects.additional_notes": "Notes",
 
     // References
     "references.title": "Professional References",
@@ -413,6 +419,9 @@ Ich habe die Locations für mehr als 17 Produktionen betreut, von denen viele im
     "projects.production": "Produktion",
     "projects.distribution": "Vertrieb",
     "projects.awards": "Auszeichnungen",
+    "projects.countries": "Land",
+    "projects.channels": "Übertragungskanal",
+    "projects.additional_notes": "Anmerkungen",
 
     // References
     "references.title": "Professionelle Referenzen",
