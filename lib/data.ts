@@ -49,7 +49,7 @@ export const projects: Project[] = [
     countries: { es: ["Alemania"], en: ["Germany"], de: ["Deutschland"] },
     type: { es: "Película para TV", en: "Television film", de: "Fernsehfilm" },
     channels: ["SR"],
-    image: "/placeholder.svg?height=600&width=425"
+    image: "/unreleased.png"
   },
   {
     id: 2,
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     },
     type: { es: "Largometraje cinematográfico", en: "Feature film", de: "Kinospielfilm" },
     channels: [],
-    image: "/placeholder.svg?height=600&width=425"
+    image: "/unreleased.png"
   },
   {
     id: 5,
