@@ -14,7 +14,6 @@ export default function Education() {
       institution: "Rheinische Fachhochschule Köln",
       period: "2014 - 2017",
       description: t("education.university.description")
-      //"Especialización en gestión de producción cinematográfica. Proyecto final: Producción de un cortometraje premiado en festivales estudiantiles.",
     },
     {
       degree: t("education.school.degree"),
