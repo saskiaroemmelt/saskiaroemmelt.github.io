@@ -17,7 +17,7 @@ export default function Header() {
       <div className="flex h-16 items-center justify-between">
         <div className="w-[100px] md:w-[120px]" />
 
-        <nav className="flex gap-4 md:gap-6 justify-center mx-auto">
+        <nav className="hidden md:flex gap-4 md:gap-6 justify-center mx-auto">
           <button
             onClick={() => scrollToSection("about-section", "about")}
             className="text-muted-foreground hover:text-foreground transition-colors text-sm md:text-base"
