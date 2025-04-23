@@ -30,14 +30,14 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-12">
         <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
-          <TabsList className="grid w-full grid-cols-3 md:grid-cols-7 mb-8">
-            <TabsTrigger value="about">{t("nav.about")}</TabsTrigger>
-            <TabsTrigger value="experience">{t("nav.experience")}</TabsTrigger>
-            <TabsTrigger value="projects">{t("nav.projects")}</TabsTrigger>
-            <TabsTrigger value="references">{t("nav.references")}</TabsTrigger>
-            <TabsTrigger value="skills">{t("nav.skills")}</TabsTrigger>
-            <TabsTrigger value="education">{t("nav.education")}</TabsTrigger>
-            <TabsTrigger value="contact">{t("nav.contact")}</TabsTrigger>
+          <TabsList className="grid grid-cols-3 md:grid-cols-7 gap-2 h-auto md:h-10 w-full mb-8">
+            <TabsTrigger value="about" className="w-full">{t("nav.about")}</TabsTrigger>
+            <TabsTrigger value="experience" className="w-full">{t("nav.experience")}</TabsTrigger>
+            <TabsTrigger value="projects" className="w-full">{t("nav.projects")}</TabsTrigger>
+            <TabsTrigger value="references" className="w-full">{t("nav.references")}</TabsTrigger>
+            <TabsTrigger value="skills" className="w-full">{t("nav.skills")}</TabsTrigger>
+            <TabsTrigger value="education" className="w-full">{t("nav.education")}</TabsTrigger>
+            <TabsTrigger value="contact" className="col-start-2 md:col-start-auto w-full">{t("nav.contact")}</TabsTrigger>
           </TabsList>
 
           <TabsContent value="about" className="mt-6" id="about-section">
