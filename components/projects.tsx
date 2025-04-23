@@ -68,7 +68,7 @@ export default function Projects() {
               </label>
               <Select value={sortBy} onValueChange={setSortBy}>
                 <SelectTrigger id="sort-by">
-                  <SelectValue placeholder="Seleccionar criterio" />
+                  <SelectValue placeholder={t("projects.sortBy")} />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="year">{t("projects.year")}</SelectItem>
@@ -84,7 +84,7 @@ export default function Projects() {
               </label>
               <Select value={filterPosition} onValueChange={setFilterPosition}>
                 <SelectTrigger id="filter-position">
-                  <SelectValue placeholder="Seleccionar posición" />
+                  <SelectValue placeholder={t("projects.filterPosition")} />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">{t("projects.allPositions")}</SelectItem>
@@ -99,14 +99,14 @@ export default function Projects() {
 
             <div>
               <label htmlFor="filter-type" className="text-sm font-medium mb-1 block">
-                Filtrar por tipo
+                {t("projects.filterType")}
               </label>
               <Select value={filterType} onValueChange={setFilterType}>
                 <SelectTrigger id="filter-type">
-                  <SelectValue placeholder="Seleccionar tipo" />
+                  <SelectValue placeholder={t("projects.filterType")} />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">Todos los tipos</SelectItem>
+                  <SelectItem value="all">{t("projects.allTypes")}</SelectItem>
                   {localizedTypes.map((type) => (
                     <SelectItem key={type} value={type}>
                       {type}
