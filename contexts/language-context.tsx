@@ -97,11 +97,6 @@ Gestioné las locaciones de más de 17 créditos, muchos de los cuales fueron es
     "projects.production": "Producción",
     "projects.distribution": "Distribución",
     "projects.awards": "Premios",
-    "projects.values": { // project id indexed.
-      1: {
-
-      },
-    },
 
     // References
     "references.title": "Referencias Profesionales",
