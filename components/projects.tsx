@@ -40,7 +40,7 @@ export default function Projects() {
       case "year":
         return filteredProjects.sort((a, b) => b.year - a.year)
       case "position":
-        return filteredProjects.sort((a, b) => positions.findIndex(p => p[language] === a.position[language]) - positions.findIndex(p => p[language] === b.position[language]))
+        return filteredProjects.sort((a: any, b: any) => positions.findIndex((p: any) => p[language] === a.position[language]) - positions.findIndex((p: any) => p[language] === b.position[language]))
       case "importance":
         return filteredProjects.sort((a, b) => b.importance - a.importance)
       default:
