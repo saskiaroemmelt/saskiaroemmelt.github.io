@@ -40,26 +40,14 @@ export const projects: Project[] = [
     id: 1,
     name: "Tatort - Das Böse in dir",
     year: 2025,
-    position: {
-      es: "Jefa de producción",
-      en: "Unit Production Manager",
-      de: "Produktionsleiterin"
-    },
+    position: { es: "Jefa de producción", en: "Unit Production Manager", de: "Produktionsleiterin" },
     director: "Dir. Luzie Loose",
     production: "Bavaria Fiction GmbH",
     distributor: "Unreleased",
     awards: { es: [], en: [], de: [] },
     importance: 8,
-    countries: {
-      es: ["Alemania"],
-      en: ["Germany"],
-      de: ["Deutschland"]
-    },
-    type: {
-      es: "Película para TV",
-      en: "Television film",
-      de: "Fernsehfilm"
-    },
+    countries: { es: ["Alemania"], en: ["Germany"], de: ["Deutschland"] },
+    type: { es: "Película para TV", en: "Television film", de: "Fernsehfilm" },
     channels: ["SR"],
     image: "/placeholder.svg?height=600&width=425"
   },
@@ -365,7 +353,7 @@ export const projects: Project[] = [
     },
     importance: 7,
     countries: { es: ["Alemania", "Belgica"], en: ["Germany", "Belgium"], de: ["Deutschland", "Belgien"] },
-    type: { es: "Miniserie Limitada", en: "Limited Miniseries", de: "Miniserie" },
+    type: { es: "Miniserie", en: "Miniseries", de: "Miniserie" },
     channels: ["RTL+", "TVNOW"],
     image: "/fakinghitler.jpg"
   },
@@ -760,11 +748,20 @@ export const projects: Project[] = [
 
 const positionOrders = ["Jefa de producción", "Jefa de locaciones", "Asistente de locaciones", "Asistente de producción", "Ayudante de producción", "Aprendiz"]
 function sortByPosition(a: any, b: any): number {
-  return positionOrders.indexOf(a) - positionOrders.indexOf(b);
+  return positionOrders.indexOf(a.es) - positionOrders.indexOf(b.es);
 }
 
-export const positions = projects.flatMap(p => p.position).filter((value, index, self) => self.indexOf(value) === index).sort(sortByPosition)
+function translatableIndexOf(array: any[], item: any): number {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].es == item.es) {
+      return i;
+    }
+  }
+  return -1;
+}
 
-export const projectTypes = projects.flatMap(p => p.type).filter((value, index, self) => self.indexOf(value) === index)
+export const positions = projects.flatMap(p => p.position).filter((value, index, self) => translatableIndexOf(self, value) == index).sort(sortByPosition)
 
-export const channels = projects.flatMap(p => p.channels).filter((value, index, self) => self.indexOf(value) === index)
+export const projectTypes = projects.flatMap(p => p.type).filter((value, index, self) => translatableIndexOf(self, value) == index)
+
+export const channels = projects.flatMap(p => p.channels).filter((value, index, self) => translatableIndexOf(self, value) == index)

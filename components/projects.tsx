@@ -40,11 +40,7 @@ export default function Projects() {
       case "year":
         return filteredProjects.sort((a, b) => b.year - a.year)
       case "position":
-        return filteredProjects.sort((a, b) => {
-          const posA = a.position[language as keyof typeof a.position]
-          const posB = b.position[language as keyof typeof b.position]
-          return posA.localeCompare(posB)
-        })
+        return filteredProjects.sort((a, b) => positions.findIndex(p => p[language] === a.position[language]) - positions.findIndex(p => p[language] === b.position[language]))
       case "importance":
         return filteredProjects.sort((a, b) => b.importance - a.importance)
       default:
@@ -60,11 +56,12 @@ export default function Projects() {
   return (
     <section id="projects" className="w-full">
       <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">{t("projects.title")}</CardTitle>
-          <CardDescription>{t("projects.subtitle")}</CardDescription>
+        <CardHeader className="space-y-2">
+          <div className="space-y-2">
+            <CardTitle className="text-2xl">{t("projects.title")}</CardTitle>
+            <CardDescription className="text-base">{t("projects.subtitle")}</CardDescription>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <label htmlFor="sort-by" className="text-sm font-medium mb-1 block">
                 {t("projects.sortBy")}
@@ -119,6 +116,7 @@ export default function Projects() {
               </Select>
             </div>
           </div>
+          </div>
         </CardHeader>
         <CardContent>
           <div className="space-y-10">
@@ -159,14 +157,13 @@ function ProjectCard({ project }: { project: Project }) {
           <div
             className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent 
                        flex flex-col justify-end p-6 transition-opacity duration-500
-                       group-hover:from-black/90 group-hover:via-black/60"
-          >
+                       group-hover:from-black/90 group-hover:via-black/60">
             <div className="flex flex-wrap items-center gap-2 mb-3">
               <Badge variant="default">
-                <Calendar className="h-3 w-3 mr-1"/>{project.year}
+                <Calendar className="h-3 w-3 mr-1" />{project.year}
               </Badge>
               <Badge variant="default">
-                <Film className="h-3 w-3 mr-1"/>{type}
+                <Film className="h-3 w-3 mr-1" />{type}
               </Badge>
             </div>
             <h3 className="text-2xl font-bold text-white mb-2 transform transition-transform duration-500 group-hover:translate-y-0">
@@ -213,7 +210,7 @@ function ProjectCard({ project }: { project: Project }) {
                 <MapPin className="h-4 w-4 text-muted-foreground mt-1" />
                 <div>
                   <span className="font-medium">{t("projects.countries")}:</span>
-                  <div className="flex flex-wrap gap-1 mt-1">
+                  <div className="flex flex-wrap gap-2 mt-3">
                     {countries.map((country, idx) => (
                       <Badge key={idx} variant="outline">
                         {country}
@@ -228,7 +225,7 @@ function ProjectCard({ project }: { project: Project }) {
                   <Tv className="h-4 w-4 text-muted-foreground mt-1" />
                   <div>
                     <span className="font-medium">{t("projects.channels")}:</span>
-                    <div className="flex flex-wrap gap-1 mt-1">
+                    <div className="flex flex-wrap gap-2 mt-3">
                       {project.channels.map((channel, idx) => (
                         <Badge key={idx} variant="default">
                           {channel}
