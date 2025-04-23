@@ -11,7 +11,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
-  basePath: "/saskiaroemmelt",
+  basePath: "/",
 }
 
 export default nextConfig
