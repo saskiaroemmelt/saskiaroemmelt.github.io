@@ -73,7 +73,7 @@ export default function Projects() {
                 <SelectContent>
                   <SelectItem value="year">{t("projects.year")}</SelectItem>
                   <SelectItem value="position">{t("projects.position")}</SelectItem>
-                  <SelectItem value="importance">{t("projects.importance")}</SelectItem>
+                  {/*<SelectItem value="importance">{t("projects.importance")}</SelectItem>*/}
                 </SelectContent>
               </Select>
             </div>
