@@ -79,14 +79,6 @@ export default function Education() {
                 </div>
                 : null
             }
-
-            <div>
-              <h3 className="font-semibold mb-4 flex items-center gap-2">
-                <BookOpen className="h-5 w-5" />
-                {t("education.continuous")}
-              </h3>
-              <p className="text-sm">{t("education.continuousText")}</p>
-            </div>
           </div>
         </CardContent>
       </Card>

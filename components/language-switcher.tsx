@@ -30,15 +30,6 @@ export default function LanguageSwitcher() {
               className="rounded-sm"
             />
           )}
-          {language === "de" && (
-            <Image
-              src="/de.svg?height=16&width=24"
-              alt="Deutsch"
-              width={24}
-              height={16}
-              className="rounded-sm"
-            />
-          )}
           <span className="sr-only">Cambiar idioma</span>
         </Button>
       </DropdownMenuTrigger>
@@ -65,18 +56,6 @@ export default function LanguageSwitcher() {
               className="rounded-sm"
             />
             <span>English</span>
-          </div>
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage("de")} className="cursor-pointer">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/de.svg?height=16&width=24"
-              alt="Deutsch"
-              width={24}
-              height={16}
-              className="rounded-sm"
-            />
-            <span>Deutsch</span>
           </div>
         </DropdownMenuItem>
       </DropdownMenuContent>
