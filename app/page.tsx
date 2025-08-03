@@ -34,7 +34,7 @@ export default function Home() {
             <TabsTrigger value="about" className="w-full">{t("nav.about")}</TabsTrigger>
             <TabsTrigger value="experience" className="w-full">{t("nav.experience")}</TabsTrigger>
             <TabsTrigger value="projects" className="w-full">{t("nav.projects")}</TabsTrigger>
-            <TabsTrigger value="references" className="w-full">{t("nav.references")}</TabsTrigger>
+            /* <TabsTrigger value="references" className="w-full">{t("nav.references")}</TabsTrigger> */
             <TabsTrigger value="skills" className="w-full">{t("nav.skills")}</TabsTrigger>
             <TabsTrigger value="education" className="w-full">{t("nav.education")}</TabsTrigger>
             <TabsTrigger value="contact" className="col-start-2 md:col-start-auto w-full">{t("nav.contact")}</TabsTrigger>
@@ -58,11 +58,11 @@ export default function Home() {
             </ScrollAnimation>
           </TabsContent>
 
-          <TabsContent value="references" className="mt-6" id="references-section">
-            <ScrollAnimation threshold={0.05}>
-              <References />
-            </ScrollAnimation>
-          </TabsContent>
+          /*<TabsContent value="references" className="mt-6" id="references-section">*/
+          /*  <ScrollAnimation threshold={0.05}>*/
+          /*    <References />*/
+          /*  </ScrollAnimation>*/
+          /*</TabsContent>*/
 
           <TabsContent value="skills" className="mt-6" id="skills-section">
             <ScrollAnimation threshold={0.05}>
