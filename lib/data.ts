@@ -37,6 +37,21 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 30,
+    name: "Tayfun. Der Saarlandkrimi - Bruder, Liebe, Tod",
+    year: 2025,
+    position: { es: "Jefa de producción", en: "Unit Production Manager", de: "Produktionsleiterin" },
+    director: "Janis Rebecca Rattenni",
+    production: "Bavaria Fiction GmbH",
+    distributor: "Unreleased",
+    awards: { es: [], en: [], de: [] },
+    importance: 8,
+    countries: { es: ["Alemania"], en: ["Germany"], de: ["Deutschland"] },
+    type: { es: "Película para TV", en: "Television film", de: "Fernsehfilm" },
+    channels: ["SR", "ARD"],
+    image: "/unreleased.png"
+  },
+  {
     id: 1,
     name: "Tatort - Das Böse in dir",
     year: 2025,
