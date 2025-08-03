@@ -36,12 +36,12 @@ export default function Header() {
           >
             {t("nav.projects")}
           </button>
-          <button
-            onClick={() => scrollToSection("references-section", "references")}
-            className="text-muted-foreground hover:text-foreground transition-colors hidden md:inline-block text-sm md:text-base"
-          >
-            {t("nav.references")}
-          </button>
+          /*<button */
+          /*  onClick={() => scrollToSection("references-section", "references")} */
+          /*  className="text-muted-foreground hover:text-foreground transition-colors hidden md:inline-block text-sm md:text-base"*/
+          /* >*/
+          /*  {t("nav.references")}*/
+          /*</button>*/
           <button
             onClick={() => scrollToSection("skills-section", "skills")}
             className="text-muted-foreground hover:text-foreground transition-colors hidden md:inline-block text-sm md:text-base"
@@ -93,12 +93,12 @@ export default function Header() {
                 >
                   {t("nav.projects")}
                 </button>
-                <button
-                  onClick={() => scrollToSection("references-section", "references")}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-left"
-                >
-                  {t("nav.references")}
-                </button>
+                /*<button*/
+                /*  onClick={() => scrollToSection("references-section", "references")}*/
+                /*  className="text-muted-foreground hover:text-foreground transition-colors text-left"*/
+                /*>*/
+                /*  {t("nav.references")}*/
+                /*</button>*/
                 <button
                   onClick={() => scrollToSection("skills-section", "skills")}
                   className="text-muted-foreground hover:text-foreground transition-colors text-left"
