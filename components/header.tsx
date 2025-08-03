@@ -87,6 +87,7 @@ export default function Header() {
                 >
                   {t("nav.projects")}
                 </button>
+
                 <button
                   onClick={() => scrollToSection("skills-section", "skills")}
                   className="text-muted-foreground hover:text-foreground transition-colors text-left"
